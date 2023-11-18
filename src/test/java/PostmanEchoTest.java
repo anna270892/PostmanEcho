@@ -21,7 +21,7 @@ public class PostmanEchoTest {
                 .then()
                 .log().all()
                 .statusCode(200)
-                .body("json.id", equalTo(1)) // Проверка, что поле id содержит значение 1
+                .body("json.id", equalTo(3)) // Проверка, что поле id содержит значение 1
                 .body("json.age", equalTo(31)) // Проверка, что поле age содержит значение 31
                 .body("json.name", equalTo("Anna")); // Проверка, что поле name содержит значение "Anna"
     }
